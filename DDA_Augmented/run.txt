@@ -1,0 +1,69 @@
+sh ./train.sh config1.txt
+sh ./train.sh config2.txt
+sh ./train.sh config3.txt
+sh ./train.sh config4.txt
+sh ./train.sh config5.txt
+sh ./train.sh config6.txt
+sh ./train.sh config7.txt
+sh ./train.sh config8.txt
+sh ./train.sh config9.txt
+sh ./train.sh config10.txt
+
+
+sh ./test.sh config1.txt output_soft_1/test_final_results
+sh ./test.sh config2.txt output_soft_2/test_final_results
+sh ./test.sh config3.txt output_soft_3/test_final_results
+sh ./test.sh config4.txt output_soft_4/test_final_results
+sh ./test.sh config5.txt output_soft_5/test_final_results
+sh ./test.sh config6.txt output_soft_6/test_final_results
+sh ./test.sh config7.txt output_soft_7/test_final_results
+sh ./test.sh config8.txt output_soft_8/test_final_results
+sh ./test.sh config9.txt output_soft_9/test_final_results
+sh ./test.sh config10.txt output_soft_10/test_final_results
+
+
+
+python2 postscripts/retreive.py output_soft_1/test_final_results
+python2 postscripts/retreive.py output_soft_2/test_final_results
+python2 postscripts/retreive.py output_soft_3/test_final_results
+python2 postscripts/retreive.py output_soft_4/test_final_results
+python2 postscripts/retreive.py output_soft_5/test_final_results
+python2 postscripts/retreive.py output_soft_6/test_final_results
+python2 postscripts/retreive.py output_soft_7/test_final_results
+python2 postscripts/retreive.py output_soft_8/test_final_results
+python2 postscripts/retreive.py output_soft_9/test_final_results
+python2 postscripts/retreive.py output_soft_10/test_final_results
+
+
+cp output_soft_1/test_final_results_plabels 10_fold_large/test_final_results_plabels_1
+cp output_soft_2/test_final_results_plabels 10_fold_large/test_final_results_plabels_2
+cp output_soft_3/test_final_results_plabels 10_fold_large/test_final_results_plabels_3
+cp output_soft_4/test_final_results_plabels 10_fold_large/test_final_results_plabels_4
+cp output_soft_5/test_final_results_plabels 10_fold_large/test_final_results_plabels_5
+cp output_soft_6/test_final_results_plabels 10_fold_large/test_final_results_plabels_6
+cp output_soft_7/test_final_results_plabels 10_fold_large/test_final_results_plabels_7
+cp output_soft_8/test_final_results_plabels 10_fold_large/test_final_results_plabels_8
+cp output_soft_9/test_final_results_plabels 10_fold_large/test_final_results_plabels_9
+cp output_soft_10/test_final_results_plabels 10_fold_large/test_final_results_plabels_10
+
+cp output_soft_1/test_final_results_tlabels 10_fold_large/test_final_results_tlabels_1
+cp output_soft_2/test_final_results_tlabels 10_fold_large/test_final_results_tlabels_2
+cp output_soft_3/test_final_results_tlabels 10_fold_large/test_final_results_tlabels_3
+cp output_soft_4/test_final_results_tlabels 10_fold_large/test_final_results_tlabels_4
+cp output_soft_5/test_final_results_tlabels 10_fold_large/test_final_results_tlabels_5
+cp output_soft_6/test_final_results_tlabels 10_fold_large/test_final_results_tlabels_6
+cp output_soft_7/test_final_results_tlabels 10_fold_large/test_final_results_tlabels_7
+cp output_soft_8/test_final_results_tlabels 10_fold_large/test_final_results_tlabels_8
+cp output_soft_9/test_final_results_tlabels 10_fold_large/test_final_results_tlabels_9
+cp output_soft_10/test_final_results_tlabels 10_fold_large/test_final_results_tlabels_10
+
+cp data/1/test_summary 10_fold_large/test_summary_1
+cp data/2/test_summary 10_fold_large/test_summary_2
+cp data/3/test_summary 10_fold_large/test_summary_3
+cp data/4/test_summary 10_fold_large/test_summary_4
+cp data/5/test_summary 10_fold_large/test_summary_5
+cp data/6/test_summary 10_fold_large/test_summary_6
+cp data/7/test_summary 10_fold_large/test_summary_7
+cp data/8/test_summary 10_fold_large/test_summary_8
+cp data/9/test_summary 10_fold_large/test_summary_9
+cp data/10/test_summary 10_fold_large/test_summary_10

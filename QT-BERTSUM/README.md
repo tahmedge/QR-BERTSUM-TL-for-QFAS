@@ -1,0 +1,1 @@
+BERTSUM_QFAS contains the script to run BERTSUM in Debatepedia Dataset. Most of the codes are collected from the official [Repository](https://github.com/nlpyang/PreSumm). Instructions to run the code can be found in the official [Repository](https://github.com/nlpyang/PreSumm).
